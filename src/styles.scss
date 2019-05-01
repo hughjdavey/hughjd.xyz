@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import "~materialize-css/sass/materialize";
+
+html * {
+  font-family: Lato;
+}
+
+.hughjd-page {
+  height: calc(100vh - 56px);   // subtract 56px for navbar height
+  background-color: $background;
+}
+
+.hughjd-title {
+  color: $text-primary;
+  text-align: center;
+  font-size: 100px;
+  font-weight: lighter;
+}
+
+@media only screen and (min-width: 601px) {
+  .hughjd-page {
+    height: calc(100vh - 64px);   // subtract 64px for navbar height
+  }
+}
